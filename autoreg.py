@@ -1,7 +1,7 @@
 from data import *
 
 i = 0
-n = 3
+n = 3 #Number of registrations
 driver = webdriver.Chrome('data\chromedriver.exe')
 logpass = open("log_pass.txt", "a")
 print('Загружено имен:', len(open("data\listnames.txt", "r").readlines()))
