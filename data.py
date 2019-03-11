@@ -17,7 +17,7 @@ def random_date():
 
 def user_activity():
     a = 1
-    followers_count = 0
+    followers_count = 1
     followers_count_max = 25
     url = driver.current_url
     users_count = url.replace("http://84.201.143.169/user/id", "")
