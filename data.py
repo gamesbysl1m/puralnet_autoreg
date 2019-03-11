@@ -31,11 +31,9 @@ def user_activity():
             followers_count = followers_count + 1
             a = a + 1
             print(followers_count)
-            time.sleep(1)
+            time.sleep(0.2)
         except Exception:
-            followers_count = followers_count + 1
-            a = a + 1
-            print('Subscription error ', followers_count)
+            print('Subscription error')
             pass
 
 

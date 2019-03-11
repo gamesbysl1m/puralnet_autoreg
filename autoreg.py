@@ -1,7 +1,7 @@
 from data import *
 
 current_registrations_count = 0
-registrations_count = 10
+registrations_count = 3
 logpass = open("log_pass.txt", "a")
 print('Names loaded:', len(open("data\listnames.txt", "r").readlines()))
 print('SurNames loaded:', len(open("data\listsurnames.txt", "r").readlines()))
@@ -36,7 +36,8 @@ try:
         print('-------------------------')
 
 except Exception:
-        pass
+    time.sleep(3)
+    pass
 
 logpass.close()
 driver.close()
