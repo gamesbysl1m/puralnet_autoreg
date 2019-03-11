@@ -28,8 +28,8 @@ def user_activity():
         driver.get("http://84.201.143.169/user/id" + str(random.randint(0, int(users_count))))
         try:
             driver.find_element_by_class_name('btn-success').send_keys(Keys.ENTER)
-            followers_count = followers_count + 1
-            a = a + 1
+            followers_count += 1
+            a += 1
             print(followers_count)
             time.sleep(0.2)
         except Exception:

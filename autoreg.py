@@ -24,7 +24,7 @@ try:
         driver.find_element_by_id("password").send_keys(password)
         driver.find_element_by_id("retype_password").send_keys(password)
         driver.find_element_by_id("submit").send_keys(Keys.ENTER)
-        current_registrations_count = current_registrations_count + 1
+        current_registrations_count += 1
         print("Number of registrations: ", current_registrations_count)
         user_activity()
         driver.get("http://84.201.143.169/logout")
